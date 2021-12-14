@@ -9,6 +9,6 @@
 
 #### script and parameter files
 - bat file [impdp_auto.bat] (https://github.com/VCNTQA/Oracle_Windows/blob/main/impdp_auto.bat)
-- Powershell file []
+- Powershell file [impdp_auto_script.ps1] (https://github.com/VCNTQA/Oracle_Windows/blob/main/impdp_auto_script.ps1)
 - Database account credential file if needed
 - Post SQL file if needed
