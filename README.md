@@ -12,7 +12,7 @@
 - Powershell file [impdp_auto_script.ps1](https://github.com/VCNTQA/Oracle_Windows/blob/main/impdp_auto_script.ps1)
 - Database account credential file if needed *impdp_auto_passfile_db.txt*
 - Post SQL file if needed 
-  *impdp_auto_1-postsql_update_hr.sql*
-  *impdp_auto_2-postsql_update_ad.sql*
-  *impdp_auto_3-postsql_update_pt.sql*
-  *impdp_auto_4-postsql_update_bk.sql*
+   *impdp_auto_1-postsql_update_hr.sql*
+   *impdp_auto_2-postsql_update_ad.sql*
+   *impdp_auto_3-postsql_update_pt.sql*
+   *impdp_auto_4-postsql_update_bk.sql*
