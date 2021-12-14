@@ -49,8 +49,8 @@ $EXCLUDE_OBJECT          = 'TRIGGER'
 $Impdp_Dir               = 'IMPDP_AUTO_DIR'                               # DB data pump directory for impdp            
 $Impdp_Log               = "IMPORT_DC1PROD_HR_$Date.LOG"                  # Impdp log file
 $Ignore_ORA              = 'ORA-39082|ORA-39083|ORA-01917'                # Ignore ora error : ORA-39082: object type create with compilation errors
-																	      # Ignore ora error : ORA-39083: Object type OBJECT_GRANT failed to create with error
-																	      # Ignore ora error : ORA-01917: user or role 'PRODHRDATA_READ' 'PRODHRCTL_READ' does not exist  															   
+									  # Ignore ora error : ORA-39083: Object type OBJECT_GRANT failed to create with error
+									  # Ignore ora error : ORA-01917: user or role 'PRODHRDATA_READ' 'PRODHRCTL_READ' does not exist  															   
 																	   
 ### Post SQL 
 $PostSQL_Dir             = 'D:\Script'                                    # Post SQL directory                                                      
@@ -275,7 +275,7 @@ try {
 	if (Test-Path -path "$Target_Dir\$Target_File") {
 		$Target_Dump_File_Size = (Get-Item "$Target_Dir\$Target_File").Length
 		if ( $Target_Dump_File_Size -eq $Dump_File_Size ){
-			$Copy_Needed       = $False                                    # If file already exists on target with right size, we can skip the copy of dump file
+			$Copy_Needed       = $False                            # If file already exists on target with right size, we can skip the copy of dump file
 		}
 	} 
 	if ($Copy_Needed) { Copy-Item "$Source_Dir\$Source_File" -Destination "$Target_Dir\$Target_File" -ErrorAction Stop }
